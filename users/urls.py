@@ -17,8 +17,7 @@ from django.contrib import admin
 from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/v1/rest-auth/registration/', include('account.urls')),
-    path('api/v1/rest-auth/', include('account.urls')),  # new
+    path('api/v1/rest-auth/', include('account.urls')),
     # path('', include('account.urls')),
 
     # для входа по готовому логину и паролю
